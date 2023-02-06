@@ -28,6 +28,10 @@ interactive_tools_galaxy_config:
     interactivetools_enable: true
     interactivetools_map: "{{ gie_proxy.sessions_path }}"
     galaxy_infrastructure_url: "http://{{ ansible_default_ipv4.address }}/galaxy/"
+  gravity:
+    gx_it_proxy:
+      enable: true
+      port: {{ gie_proxy_port }}
 
 galaxy_config_templates:
   - src: galaxy/config/tool_conf_interactive.xml.j2
