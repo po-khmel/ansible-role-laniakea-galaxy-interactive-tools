@@ -31,7 +31,7 @@ interactive_tools_galaxy_config:
   gravity:
     gx_it_proxy:
       enable: true
-      port: {{ gie_proxy_port }}
+      port: "{{ gie_proxy_port }}"
 
 galaxy_config_templates:
   - src: galaxy/config/tool_conf_interactive.xml.j2
